@@ -24,14 +24,16 @@ Django handles auth and admin without extra work. React + TypeScript catches bug
 ### Backend
 
 1. Install PostgreSQL and make sure it's running
-2. Create a `.env` file in the root:
+2. Create a `.env` file:
    ```
+   SECRET_KEY=dev-secret-change-in-production
    DB_NAME=taskmanager
    DB_USER=postgres
    DB_PASSWORD=postgres
-   DB_HOST=localhost
+   DB_HOST=db
    DB_PORT=5432
-   SECRET_KEY=your-secret-key-here
+
+   VITE_API_URL=http://localhost:8000
    ```
 3. Go to backend folder:
    ```bash
